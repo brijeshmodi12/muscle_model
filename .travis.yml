@@ -10,11 +10,13 @@ env:
     - OMV_ENGINE=jNeuroML_validate
     - OMV_ENGINE=NON_OMV_TESTS
 
+
 before_install:
     # To run tests requiring a graphical user interface on Travis CI, use xvfb (X Virtual Framebuffer) to imitate a display.
     - "export DISPLAY=:99.0"
     - "sh -e /etc/init.d/xvfb start"
-
+    
+    
 install: 
     - cd
     
@@ -44,13 +46,10 @@ script:
     - pynml-channelanalysis -temperature 34  -minV -55  -maxV 80  -duration 600  -clampBaseVoltage -55  -clampDuration 580  -stepTargetVoltage 10  -erev -55 -nogui  ./k_slow.channel.nml
 
 
-    #Testing individual shell script
+    
+    #Testing individual shell scripts
 
     - py.test shell_script_tester.py
-    
-    # Test generation of iv curve for ca channel
-
-    - ./ivcurve_ca_boyle.sh -nogui
     
     
     # Test Python version of Boyle & Cohen model
@@ -60,5 +59,4 @@ script:
     - python vclamp_decimal.py -nogui
     - python compareToNeuroML2.py
 
-    
     

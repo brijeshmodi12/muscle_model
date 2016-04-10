@@ -5,7 +5,7 @@
 
  [![Build Status](https://travis-ci.org/openworm/muscle_model.png?branch=master)](https://travis-ci.org/openworm/muscle_model) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/openworm/muscle_model?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Authors: Mike Vella, Alex Dibert, Padraig Gleeson, Rayner Lucas
+Authors: Mike Vella, Alex Dibert, Padraig Gleeson, Rayner Lucas, Brijesh Modi
 email:mv333@cam.ac.uk
 
 If you contribute to the project please add your name to the Authors field
